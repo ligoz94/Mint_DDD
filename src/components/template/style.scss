@@ -1,0 +1,13 @@
+.default_template {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &__content {
+    height: 100%;
+    flex: 1;
+  }
+  &__navbar {
+    padding: 20px;
+    flex: 0;
+  }
+}
