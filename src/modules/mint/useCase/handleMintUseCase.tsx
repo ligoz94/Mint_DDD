@@ -13,6 +13,9 @@ const handleMintUseCase = async (counter: number) => {
         value: ethers.utils.parseEther((0.02 * counter).toString()),
       })
       console.log('response:', response)
+      response.wait().then(function (receipt: any) {
+        console.log('receipt:', receipt)
+      })
     } catch (error) {
       console.log('error:', error)
     }
